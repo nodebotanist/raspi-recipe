@@ -1,4 +1,4 @@
-#! /bis/bash
+#!/bin/bash
 
 # Enable SSH
 sudo systemctl enable ssh
