@@ -1,10 +1,10 @@
 #! /bin/bash
 
-# add nodebotanist user
-adduser nodebotanist
+# add custom user
+adduser $1
 
 # set password
-usermod -p $(echo ***** | openssl passwd -1 -stdin) nodebotanist
+usermod -p $(echo $2 | openssl passwd -1 -stdin) nodebotanist
 
-# give nodebotanist sudoer privileges
-echo "nodebotanist    ALL=(ALL) ALL" >> /etc/sudoers
+# give custom user sudoer privileges
+echo "$1    ALL=(ALL) ALL" >> /etc/sudoers
