@@ -10,3 +10,8 @@ get these files on a raspi. Then set the variables in Makefile, and run `make co
 
 * `CUSTOM_USERNAME` : username you'd like to set
 * `CUSTOM_USER_PASSWORD` : password for your custom user
+
+### Notes
+
+[Headless Raspi Setup](https://www.raspberrypi.org/forums/viewtopic.php?t=191252)
+
