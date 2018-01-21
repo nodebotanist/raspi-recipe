@@ -13,8 +13,9 @@ configure:
 	# configure nodebotanist user
 	./custom-user-setup.sh $(CUSTOM_USERNAME) $(CUSTOM_USER_PASSWORD)
 	# configure network-- WiFi, network name, etc
-	./network-setup
+	./network-setup.sh
 	# update packages
+	./update.sh
 	# allow serial terminal, ssh
 	# setup ssh keys for nodebotanist
 	# lock pi user
