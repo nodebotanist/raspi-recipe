@@ -24,18 +24,15 @@ disable_after_first_run(){
     ## ## Here are some examples of things you might do...
     ##
     ## ## Remove unneeded packages
-    ## apt-get -y remove --purge xserver-common x11-common gnome-icon-theme gnome-themes-standard penguinspuzzle
-    ## apt-get -y remove --purge desktop-base desktop-file-utils hicolor-icon-theme raspberrypi-artwork omxplayer
-    ## apt-get -y autoremove
+apt-get -y remove --purge xserver-common x11-common gnome-icon-theme gnome-themes-standard penguinspuzzle
+apt-get -y remove --purge desktop-base desktop-file-utils hicolor-icon-theme raspberrypi-artwork omxplayer
+apt-get -y autoremove
     ##
     ## ## Install a package that will automatically mount & unmount USB drives
-    ## apt-get install usbmount
+apt-get install usbmount
     ##
     ## ## Setup wifi so you can connect to a secured network without a keyboard & monitor!
-    ## cp /etc/wpa_supplicant/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant.conf.bak
-    ## wpa_passphrase "MyWiFi" "MyPassphrase" | tee -a /etc/wpa_supplicant/wpa_supplicant.conf
-    ## sed -i.bak 's/iface wlan0 inet manual/iface wlan0 inet dhcp/; s/wpa-roam/wpa-conf/; $i auto wlan0 eth0' /etc/network/interfaces
-    ##
+
     ## ## Add your SSH pub key
     ## (umask 077; mkdir -p ~/.ssh; touch ~/.ssh/authorized_keys)
     ## chown -R $(id -u pi):$(id -g pi) ~/.ssh
@@ -43,6 +40,9 @@ disable_after_first_run(){
     ##
     ## ## fake completing the raspi-config
     ## sed '/do_finish()/,/^$/!d' /usr/bin/raspi-config | sed -e '1i ASK_TO_REBOOT=0;' -e '$a do_finish' | bash
+
+
+make setup
 
 
 # If you want this script to remain and run at ever boot comment out the next line.
