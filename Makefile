@@ -1,7 +1,7 @@
 # variables
 
-CUSTOM_USERNAME = myuser
-CUSTOM_USER_PASSWORD = mypassword
+CUSTOM_USERNAME = 
+CUSTOM_USER_PASSWORD = 
 
 # targets
 
@@ -19,4 +19,5 @@ configure:
 	# allow serial terminal, ssh
 	# setup ssh keys for nodebotanist
 	# lock pi user
+	./remove-pi-user.sh
 	# reboot
