@@ -1,7 +1,7 @@
 # variables
 
-CUSTOM_USERNAME = 
-CUSTOM_USER_PASSWORD = 
+CUSTOM_USERNAME = test
+CUSTOM_USER_PASSWORD = test 
 
 # targets
 
